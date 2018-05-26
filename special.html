@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <title>The Conference | JK Institute | University of Allahabad</title>
+    <link rel="icon" href="design/img/jklogo15.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design/w3.css">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/icon.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        h1{
+            color:white;
+            font-family: serif;
+        }
+        h3{
+            color:purple;
+        }
+        h3{
+            font-family: serif;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+            display: none;
+        }
+        /*.w3-row{
+            max-width: 95%;
+            margin: 0 auto;
+        }*/
+
+        a.ex2:link{
+            text-decoration: none;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <body>
+        <div class="Container">
+            <header style="background-color:black">
+                <div class="w3-row">
+                    <div class="w3-col">
+                        <a href="index.html" style="text-decoration:none">
+                            <div id="logo" style="float: center;">
+                                <img src="design/img/logon.jpg" width="100%">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Navbar -->
+<ul class="w3-navbar w3-theme-d2 w3-left-align w3-black w3-medium">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li style="width:8.5%"><a href="index.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:16%"><a href="icetcce.html"><i class="w3-margin-right"></i>The Conference<br>IC3E-2018</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:18%"><a href="accepted.html"><i class="w3-margin-center"></i>List of Accepted Papers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="schedule.html"><i class="w3-margin-center"></i>Schedule</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:11%"><a href="speakers.html"><i class="w3-margin-center"></i>Invited<br>Speakers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="committees.html"><i class="w3-margin-center"></i>Committees</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10.5%"><a href="registration.html"><i class="w3-margin-right"></i>Registration</a></li>
+
+    <li class="w3-dropdown-hover w3-hide-small" style="width:16%">
+        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="allahabad.html">The Allahabad</a>
+            <a href="reachald.html">How to reach Allahabad</a>
+            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+            <a href="reachjk.html">How to reach J K Institute</a>
+        </div>
+    </li>
+            </ul>
+
+
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-black w3-medium"> 
+                    <li class="w3-dropdown-hover"><a href="icetcce.html">The Conference IC3E-2018</a></li>
+                    <li class="w3-dropdown-hover"><a href="accepted.html">List of Accepted Papers</a></li>
+                    <li class="w3-dropdown-hover"><a href="schedule.html">Schedule</a></li>
+                    <li class="w3-dropdown-hover"><a href="speakers.html">Invited Speakers</a></li>
+                    <li class="w3-dropdown-hover"><a href="committees.html">Committees</a></li>
+                    <li class="w3-dropdown-hover"><a href="registration.html">Registration</a></li>
+
+                    <li class="w3-dropdown-hover">
+                        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-purple w3-card-4">
+                            <a href="allahabad.html">The Allahabad</a>
+                            <a href="reachald.html">How to reach Allahabad</a>
+                            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                            <a href="reachjk.html">How to reach J K Institute</a>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-container">
+                    <center>
+                        <h3 style="color:purple">Call For Special Sessions</h3>
+                    </center>
+                </div>
+                <div style="height:1px; background-color:#AAAAAA; clear:both; width:70%; margin:0px auto; margin-bottom:5px;"></div>
+
+                <div class="w3-container">
+                    <blockquote>
+                        <div class="w3-row">                      
+                            <p>On the occasion of 60th Anniversary of J.K. Institute of Applied Physics and Technology, University of Allahabad, Allahabad, U.P., India, International Conference on Emerging Trends in Communication, Computing and Electronics is being organized from 13-15 April, 2018. In IC3E-2018 we are organizing special sessions in new and emerging area. We are seeking innovative, high-quality and potentially interdisciplinary proposals for Special Sessions that complement the regular program of the conference. Special Sessions should be focused and provide both an overview of the state-of-the-art, as well as highlight the most promising research directions, trends and challenges in the proposed fields of conference.</p>
+                            <br>
+                            <p>Proposers should submit the following information with their submission:</p>
+                            <ul>
+                                <li>Special Session title</li>
+                                <li>Short description of proposed field (one paragraph)</li>
+                                <li>Novelty and motivation (one to two paragraphs), including why this topic is of interest to the IC3E-2018 community</li>
+                                <li>Short biography of the organizers</li>
+                                <li>The targeted number of papers per session is 6, and at least 4 of them should not include the organizers as authors.</li>
+                            </ul>                     
+
+                            <br><br>
+                            <p>Proposals will be evaluated based on topic novelty and associated impact, organizing committee qualifications, as well as the proposed list of contributed papers.</p>
+                            <br>
+                            <p>
+                                Special Session submissions at IC3E-2018 are reviewed via the same exact process as submissions to the regular program, and papers are expected to meet the same quality standards. For Special Sessions that are somewhat undersubscribed (due to paper rejections or limited number of submissions), an effort will be made to identify regular submission papers to complete the session, as deemed appropriate by the conference organizers. If a Special Session is seriously undersubscribed the Special Session may be cancelled, in which case the List of Accepted Papers from the cancelled Special Session will be placed into the regular program.
+                            </p>
+                            <br>
+                            <h2>IMPORTANT DEADLINES</h2>
+                            <br>
+                            <ul>
+                                <li>Special Sessions proposals date: <b>20th  February 2018</b></li>
+                                <li>Notification of Special Sessions' acceptance: <b>22th  February 2018</b></li>
+                                <li>Submission Special Session papers: <b>20th  February 2018</b></li>
+                            </ul>
+                            <br>
+                            <br>
+                            <h2>SUBMISSION</h2>
+                            <br>
+                            <p>Proposals and inquiries should be sent via e-mail to the Special Sessions chairs Dr. Ashish Khare and Prof. Nar Singh ( ic3e2018@gmail.com).</p>
+
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+
+            <footer class="w3-container w3-black">
+                <div class="copyright" id="copyright">
+                    <h5 style="text-align: center">Copyright ©2018 J K Institute, University of Allahabad. All Rights Reserved.                
+                        <div style="float:right">
+                            <a href="#" class="back-to-top">
+                                <img src="design/img/arrow.jpg" title="Back to top" style="text-align:left" width="25" height="25">
+                            </a>
+                        </div>
+                    </h5> 
+                </div>
+            </footer>    
+
+
+        </div>
+    </body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112794009-1"></script>
+    <script>
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag() {
+                                dataLayer.push(arguments);
+                            }
+                            gtag('js', new Date());
+
+                            gtag('config', 'UA-112794009-1');
+
+                            // Used to toggle the menu on smaller screens when clicking on the menu button
+                            function openNav() {
+                                var x = document.getElementById("navDemo");
+                                if (x.className.indexOf("w3-show") == -1) {
+                                    x.className += " w3-show";
+                                } else {
+                                    x.className = x.className.replace(" w3-show", "");
+                                }
+                            }
+    </script>
+</html>

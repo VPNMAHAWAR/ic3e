@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <title>The Conference | JK Institute | University of Allahabad</title>
+    <link rel="icon" href="design/img/jklogo15.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design/w3.css">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/icon.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        h1{
+            color:white;
+            font-family: serif;
+        }
+        h3{
+            color:purple;
+        }
+        h3{
+            font-family: serif;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;   
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+            display: none;
+        }
+        /*.w3-row{
+            max-width: 95%;
+            margin: 0 auto;
+        }*/
+
+        a.ex2:link{
+            text-decoration: none;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <body>
+
+        <div class="Container">
+            <header style="background-color:black">
+                <div class="w3-row">
+                    <div class="w3-col">
+                        <a href="index.html" style="text-decoration:none">
+                            <div id="logo" style="float: center;">
+                                <img src="design/img/logon.jpg" width="100%">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Navbar -->
+<ul class="w3-navbar w3-theme-d2 w3-left-align w3-black w3-medium">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li style="width:8.5%"><a href="index.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:16%"><a href="icetcce.html"><i class="w3-margin-right"></i>The Conference<br>IC3E-2018</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:18%"><a href="accepted.html"><i class="w3-margin-center"></i>List of Accepted Papers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="schedule.html"><i class="w3-margin-center"></i>Schedule</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:11%"><a href="speakers.html"><i class="w3-margin-center"></i>Invited<br>Speakers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="committees.html"><i class="w3-margin-center"></i>Committees</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10.5%"><a href="registration.html"><i class="w3-margin-right"></i>Registration</a></li>
+
+    <li class="w3-dropdown-hover w3-hide-small" style="width:16%">
+        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="allahabad.html">The Allahabad</a>
+            <a href="reachald.html">How to reach Allahabad</a>
+            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+            <a href="reachjk.html">How to reach J K Institute</a>
+        </div>
+    </li>
+            </ul>
+
+
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-black w3-medium"> 
+                    <li class="w3-dropdown-hover"><a href="icetcce.html">The Conference IC3E-2018</a></li>
+                    <li class="w3-dropdown-hover"><a href="accepted.html">List of Accepted Papers</a></li>
+                    <li class="w3-dropdown-hover"><a href="schedule.html">Schedule</a></li>
+                    <li class="w3-dropdown-hover"><a href="speakers.html">Invited Speakers</a></li>
+                    <li class="w3-dropdown-hover"><a href="committees.html">Committees</a></li>
+                    <li class="w3-dropdown-hover"><a href="registration.html">Registration</a></li>
+
+                    <li class="w3-dropdown-hover">
+                        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-purple w3-card-4">
+                            <a href="allahabad.html">The Allahabad</a>
+                            <a href="reachald.html">How to reach Allahabad</a>
+                            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                            <a href="reachjk.html">How to reach J K Institute</a>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-row">
+                <div class="w3-container">
+                    <center>
+                        <h3 style="color:purple">Organizing Committee</h3>
+                    </center>
+                </div>
+                <div style="height:1px; background-color:#AAAAAA; clear:both; width:70%; margin:0px auto; margin-bottom:5px;"></div>
+                <div class="w3-container">
+                    <blockquote>
+                        <b>Hony. General Chair</b><br>
+                        &nbsp;&nbsp;1. Prof. R. L. Hangloo, Vice Chancellor, University of Allahabad<br><br>
+
+                        <b>Chairman</b><br>
+                        &nbsp;&nbsp;1. Prof. Nar Singh, Head, J K Institute, University of Allahabad <br><br>
+
+                        <b>Co-Chairs</b><br>
+                        &nbsp;&nbsp;1. Prof. R. R. Tewari, Dean, Faculty of Science, University of Allahabad<br>
+                        &nbsp;&nbsp;2. Prof. J. A. Ansari, J K Institute, University of Allahabad<br>
+                        &nbsp;&nbsp;3. Prof. N. K. Shukla, J K Institute, University of Allahabad<br>
+
+                        <b>Convener</b><br>
+                        &nbsp;&nbsp;1. Dr. Ashish Khare, J K Institute, University of Allahabad<br><br>
+
+                        <b>Advisory Committee</b><br>
+                        &nbsp;&nbsp;1. Prof. P. Nagabhushan, Director, IIIT, Allahabad, India<br>
+                        &nbsp;&nbsp;2. Prof. Rajeev Tripathi, Director, MNNIT Allahabad, India<br>
+                        &nbsp;&nbsp;3. Dr. Shamim Ahmed, Ex-VC, Jamia Hamdard University<br>
+                        &nbsp;&nbsp;4. Prof. K. K. Bhutani, Director, UPTECH, Allahabad, India<br>
+                        &nbsp;&nbsp;5. Prof. Madhu S. Gupta, San Diego State University, USA<br>
+                        &nbsp;&nbsp;6. Prof. Ishwar K. Sethi, Oakland University, USA<br>
+                        &nbsp;&nbsp;7. Prof. Vangalur Alagar, Concordia University, Canada<br>
+                        &nbsp;&nbsp;8. Prof. Moongu Jeon, GIST, Korea<br>
+                        &nbsp;&nbsp;9. Prof. Kaushik Deb, CUET, Bangladesh<br>
+                        &nbsp;&nbsp;10. Prof. B. K. Kanaujia, JNU, India<br>
+                        &nbsp;&nbsp;11. Prof. Rajeev Srivastava, IIT-BHU, Varanasi, India<br>
+                        &nbsp;&nbsp;12. Prof. Srikanta Patnaik, SOA University, India<br>
+                        &nbsp;&nbsp;13. Dr. N. P. Pathak, IIT Roorkee, India<br>
+                        &nbsp;&nbsp;14. Dr. P. C. Vinh, Nguyen Tat Thanh University, Vietnam<br>
+                        &nbsp;&nbsp;15. Dr. V. Prameela, DRDL Hyderabad, India<br>
+                        &nbsp;&nbsp;16. Mr. Rajneesh Agarwal, Director, STPI, New Delhi, India<br>
+                        &nbsp;&nbsp;17. Mr. Praveen Roy, Scientist E, DST, New Delhi, India<br>
+                        &nbsp;&nbsp;18. Prof. U S Tiwary, IIIT Allahabad, India<br>
+                        &nbsp;&nbsp;19. Prof. M M Gore, MNNIT Allahabad, India<br>
+                        &nbsp;&nbsp;20. Prof. R Z Khan, AMU Aligarh, India<br>
+                        &nbsp;&nbsp;21. Prof. Suneeta Agarwal, MNNIT Allahabad <br><br>
+
+                        <b>Organizing Committee</b><br>
+                        &nbsp;&nbsp;1. Prof. C. K. Dwivedi, J K Institute, University of Allahabad<br>
+                        &nbsp;&nbsp;2. Mr. P. N. Gupta, J K Institute, University of Allahabad<br>
+                        &nbsp;&nbsp;3. Dr. Rajeev Singh, J K Institute, University of Allahabad<br>
+                        &nbsp;&nbsp;4. Mr. Rajeev Srivastava, J K Institute, University of Allahabad<br>
+                        &nbsp;&nbsp;5. Dr. R. S. Yadav, J K Institute, University of Allahabad<br>
+                        &nbsp;&nbsp;6. Dr. T. J. Siddiqui, J K Institute, University of Allahabad<br>
+                        &nbsp;&nbsp;7. Dr. R. K. Srivastava, J K Institute, University of Allahabad<br>
+                        &nbsp;&nbsp;8. Dr. Om Prakash, CCE, IPS, University of Allahabad<br><br>
+
+                        <b>Technical Program Committee</b><br>
+                        &nbsp;&nbsp; &#183; Prof. Benlian Xu, Changshu Institute of Technology, China <br>
+                        &nbsp;&nbsp; &#183; Prof. Anupam Agarwal, Indian Institute of Information technology, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Prof. Shirshu Verma, Indian Institute of Information technology, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Prof. Hongkook Kim, Gwangju Institute of Science and Technology, Korea <br>
+                        &nbsp;&nbsp; &#183; Prof. Vivek Kumar Singh, Banaras Hindu University, Varanasi <br>
+                        &nbsp;&nbsp; &#183; Prof. Alok Singh, University of Hyderabad <br>
+                        &nbsp;&nbsp; &#183; Prof. Navita Srivastava, APS University, Rewa <br>
+                        &nbsp;&nbsp; &#183; Prof. B. H. Shekar, Mangalore University <br>
+                        &nbsp;&nbsp; &#183; Prof. Farooq Ahmed, University of Punjab, Lahore, Pakistan <br>
+                        &nbsp;&nbsp; &#183; Prof. Nilesh Patel, Oakland University, USA <br>
+                        &nbsp;&nbsp; &#183; Prof. Rajesh Prasad, American University of Nigeria, Nigeria <br>
+                        &nbsp;&nbsp; &#183; Prof. D. H. Manjaiah, Mangalore University <br>
+                        &nbsp;&nbsp; &#183; Prof. Neeraj Tyagi, MNNIT Allahabad <br>
+                        &nbsp;&nbsp; &#183; Prof. R.S. Yadav, MNNIT Allahabad <br>
+                        &nbsp;&nbsp; &#183; Prof. A.K. Mishra, SPMIT Allahabad <br>
+                        &nbsp;&nbsp; &#183; Prof. V.K. Singh, IET Lucknow <br>
+                        &nbsp;&nbsp; &#183; Prof. J.P. Mishra, Dean, SHUATS <br>
+                        &nbsp;&nbsp; &#183; Dr. Manish Khare, DA-IICT, Gandhinagar <br>
+                        &nbsp;&nbsp; &#183; Dr. Manish Kumar, Indian Institute of Information technology, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Emil Vassev, University of Limerick, Ireland <br>
+                        &nbsp;&nbsp; &#183; Dr. Vikash Pandey, EPFL, Switzerland <br>
+                        &nbsp;&nbsp; &#183; Dr. Dhirendra Pal Singh, Lucknow University <br>
+                        &nbsp;&nbsp; &#183; Dr. Manjari Gupta, Banaras Hindu University, Varanasi <br>
+                        &nbsp;&nbsp; &#183; Dr. Manoj Kumar Singh, Banaras Hindu University, Varanasi <br>
+                        &nbsp;&nbsp; &#183; Dr. Deepa Raj, BBAU, Lucknow <br>
+                        &nbsp;&nbsp; &#183; Dr. Abhay Kujur, BIT, Sindari <br>
+                        &nbsp;&nbsp; &#183; Dr. Anurag Singh Baghel, Gautam Buddha University, Noida <br>
+                        &nbsp;&nbsp; &#183; Dr. Sanjeev Karmakar, BIT, Durg <br>
+                        &nbsp;&nbsp; &#183; Dr. Dheeraj Agarwal, MAANIT, Bhopal <br>
+                        &nbsp;&nbsp; &#183; Dr. Mahesh Kumar Kolekar, IIT Patna <br>
+                        &nbsp;&nbsp; &#183; Dr. M. J. Davidson, NIT Warangal <br>
+                        &nbsp;&nbsp; &#183; Dr. Raghav Yadav, SHUATS, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Diwakar Yadav, MM University of Technology, Gorakhpur <br>
+                        &nbsp;&nbsp; &#183; Dr. N. P. Singh, MM University of Technology, Gorakhpur <br>
+                        &nbsp;&nbsp; &#183; Dr. Shalni Agarwal, S.R.M.U, Lucknow <br>
+                        &nbsp;&nbsp; &#183; Dr. Jeonghwan Gwak, Seoul National University Hospital, Korea <br>
+                        &nbsp;&nbsp; &#183; Dr. Ravindra K. Purwar, G.G.S Indraprastra University, Delhi <br>
+                        &nbsp;&nbsp; &#183; Dr. Alok K. Singh Kushwaha, Punjab Technical University <br>
+                        &nbsp;&nbsp; &#183; Dr. Abhay Kumar Rai, I.P.S., University of Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Sarika Yadav, I.P.S., University of Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Hari Mohan Singh, SHUATS, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Satyendra Singh, BML Munjal University, Gurugram <br>
+                        &nbsp;&nbsp; &#183; Dr. Rahul Kaushik, Jaypee Institute of Information Technology, Noida <br>
+                        &nbsp;&nbsp; &#183; Dr. Satyakesh Dubey, National Physical Laboratory, New Delhi <br>
+                        &nbsp;&nbsp; &#183; Dr. Nilay Khare, Maulana Azad National Institute of Technology, Bhopal <br>
+                        &nbsp;&nbsp; &#183; Dr. Swati Nigam, SPMIT, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Rajiv Singh, Banasthali Vidyapith <br>
+                        &nbsp;&nbsp; &#183; Dr. Kanojia Sindhuben, UCER, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Richa Srivastava, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Rakhi Garg, Banaras Hindu University <br>
+                        &nbsp;&nbsp; &#183; Dr. Khyati Vachhani, Nirma University <br>
+                        &nbsp;&nbsp; &#183; Dr. Rajitha B., MNNIT Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Amit Singh, Deptt. of Electronics Engg. IIT BHU, Varanasi <br>
+                        &nbsp;&nbsp; &#183; Dr. V. K. Srivastava, MNNIT Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. V. S. Tripathi, MNNIT Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Ashish, NMAMIT,Karkala, Karnataka <br>
+                        &nbsp;&nbsp; &#183; Dr. Kamakshi, IMS ENGINEERING College Ghaziabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Aneesh, Dr. B.R. Ambedkar University Lucknow <br>
+                        &nbsp;&nbsp; &#183; Dr. Anurag Mishra, ISDC <br>
+                        &nbsp;&nbsp; &#183; Dr. Sapna Verma, JIET. Jind, Haryana <br>
+                        &nbsp;&nbsp; &#183; Dr. D.S. Kushwaha, MNNIT Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Mexhid Ferati, Linnaeus University, Sweden <br>
+                        &nbsp;&nbsp; &#183; Dr. Chintan Mandal, Jadavpur University <br>
+                        &nbsp;&nbsp; &#183; Dr. Sushila Maheshkar, Indian School of Mines, Dhanbad <br>
+                        &nbsp;&nbsp; &#183; Dr. Devendra Kumar Tripathi, Rajkiya Engineering College, Sonbhadra <br>
+                        &nbsp;&nbsp; &#183; Dr. Ravi Shankar Saxena <br>
+                        &nbsp;&nbsp; &#183; Dr. Chetan Fadnis, Shri Vaishnav Institute of Technology and Science, Indore <br>
+                        &nbsp;&nbsp; &#183; Dr. Somak Bhattacharya, IIT (BHU), Varanasi <br>
+                        &nbsp;&nbsp; &#183; Dr. Sachin Yele, Shri Vaishnav Vidyapeeth Vishwavidyalaya, Indore <br>
+                        &nbsp;&nbsp; &#183; Dr. Prashant Srivastava, NIIT University <br>
+                        &nbsp;&nbsp; &#183; Dr. V. S. Tripathi, MNNIT, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Dr. Akhilesh Kumar Gupta, Chang Gung University, Taiwan <br>
+                        &nbsp;&nbsp; &#183; Dr. Yogendra Prajapati, MNNIT, Allahabad <br>
+                        &nbsp;&nbsp; &#183; Prof. S. K. Udgata, Hyderabad University <br>
+                        &nbsp;&nbsp; &#183; Dr. Mu Zhou, Stanford University <br>
+
+
+
+
+
+                        <br><br><br>
+                        <div class="w3-card w3-third w3-blue w3-round-xxlarge w3-center w3-container">
+                            <br><b>Contact details</b><br>
+                            Prof. Nar Singh<br>
+                            Dr. Ashish Khare<br>
+                            Department of Electronics and Communication<br>
+                            University of Allahabad, Allahabad, India<br>
+                            Email – ic3e2018@gmail.com<br>
+                            Contact- 9452401191, 9454626223<br><br>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <br>        
+            <footer class="w3-container w3-black">
+                <div class="copyright" id="copyright">
+                    <h5 style="text-align: center">Copyright ©2018 J K Institute, University of Allahabad. All Rights Reserved.                
+                        <div style="float:right">
+                            <a href="#" class="back-to-top">
+                                <img src="design/img/arrow.jpg" title="Back to top" style="text-align:left" width="25" height="25">
+                            </a>
+                        </div>
+                    </h5> 
+                </div>
+            </footer>    
+
+
+        </div>
+    </body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112794009-1"></script>
+    <script>
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag() {
+                                dataLayer.push(arguments);
+                            }
+                            gtag('js', new Date());
+
+                            gtag('config', 'UA-112794009-1');
+
+                            // Used to toggle the menu on smaller screens when clicking on the menu button
+                            function openNav() {
+                                var x = document.getElementById("navDemo");
+                                if (x.className.indexOf("w3-show") == -1) {
+                                    x.className += " w3-show";
+                                } else {
+                                    x.className = x.className.replace(" w3-show", "");
+                                }
+                            }
+    </script>
+</html>

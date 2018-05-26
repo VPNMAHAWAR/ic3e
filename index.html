@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <title>The Conference | JK Institute | University of Allahabad</title>
+    <link rel="icon" href="design/img/jklogo15.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design/w3.css">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/icon.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            //width: 400px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 2px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        
+        h1{
+            color:white;
+            font-family: serif;
+        }
+        h3{
+            color:purple;
+        }
+        h3{
+            font-family: serif;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+            display: none;
+        }
+        /*.w3-row{
+            max-width: 95%;
+            margin: 0 auto;
+        }*/
+
+        a.ex2:link{
+            text-decoration: none;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+        .changed{
+            text-decoration: line-through solid black;
+            //text-decoration-color: #F00; 
+        }
+
+                /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .date:hover{
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {top:-300px; opacity:0} 
+            to {top:0; opacity:1}
+        }
+
+        @keyframes animatetop {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        .modal-body {padding: 2px 16px;}
+
+        .modal-footer {
+            padding: 2px 16px;
+            background-color: #5cb85c;
+            color: white;
+        }
+
+    </style>
+    <body>
+        <div class="Container">
+            <header style="background-color:black">
+                <div class="w3-row">
+                    <div class="w3-col">
+                        <a href="index.html" style="text-decoration:none"><div id="logo" style="float: center;">
+
+                                <img src="design/img/logon.jpg" width="100%">
+                            </div></a>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Navbar -->
+<ul class="w3-navbar w3-theme-d2 w3-left-align w3-black w3-medium">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li style="width:8.5%"><a href="index.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:16%"><a href="icetcce.html"><i class="w3-margin-right"></i>The Conference<br>IC3E-2018</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:18%"><a href="accepted.html"><i class="w3-margin-center"></i>List of Accepted Papers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="schedule.html"><i class="w3-margin-center"></i>Schedule</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:11%"><a href="speakers.html"><i class="w3-margin-center"></i>Invited<br>Speakers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="committees.html"><i class="w3-margin-center"></i>Committees</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10.5%"><a href="registration.html"><i class="w3-margin-right"></i>Registration</a></li>
+
+    <li class="w3-dropdown-hover w3-hide-small" style="width:16%">
+        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="allahabad.html">The Allahabad</a>
+            <a href="reachald.html">How to reach Allahabad</a>
+            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+            <a href="reachjk.html">How to reach J K Institute</a>
+        </div>
+    </li>
+            </ul>
+
+
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-black w3-medium"> 
+                    <li class="w3-dropdown-hover"><a href="icetcce.html">The Conference IC3E-2018</a></li>
+                    <li class="w3-dropdown-hover"><a href="accepted.html">List of Accepted Papers</a></li>
+                    <li class="w3-dropdown-hover"><a href="schedule.html">Schedule</a></li>
+                    <li class="w3-dropdown-hover"><a href="speakers.html">Invited Speakers</a></li>
+                    <li class="w3-dropdown-hover"><a href="committees.html">Committees</a></li>
+                    <li class="w3-dropdown-hover"><a href="registration.html">Registration</a></li>
+
+                    <li class="w3-dropdown-hover">
+                        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-purple w3-card-4">
+                            <a href="allahabad.html">The Allahabad</a>
+                            <a href="reachald.html">How to reach Allahabad</a>
+                            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                            <a href="reachjk.html">How to reach J K Institute</a>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="w3-row">
+
+                <br>
+                <div class="w3-container w3-row">
+                    <div class="w3-container w3-center">
+                        <a href="https://www.springer.com" target="_blank">
+                            <button class="button" style="width: 100%">
+                        
+                        <h1>
+                            
+                                <img src="design/img/springer.jpg" style="width: 2.5em">
+                            <span>Conference proceeding will be published by Springer.</span></h1>  
+                            </button></a>
+                    </div>
+                    <br>
+                    <div class="w3-half" style="padding-right:5px;">
+                        <h2 style="color:red"><b>Important Links</b></h2>
+                        <a href="/design/CFP4.pdf" target="_blank"><button class="button w3-container" style="width: 70%"><span>Call For Papers</span></button></a>
+                        <a href="specialsession.html"><button class="button w3-container" style="width: 70%"><span>Special Session on Frontiers in Multimedia Analytics</span></button></a>
+                        
+                        <ul style="padding-left:3em;">
+                            <!-- <li><a class="ex2" href="registration.html">Registration</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li> -->
+                            <li><a class="ex2" href="authors.html">Guidelines for Authors</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><span id="myBtn" class="date">Important Dates</span>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><a class="ex2" href="submission.html">Conference Proceedings</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><a class="ex2" href="template.html">Conference Proceedings Templates</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><a class="ex2" href="tutorial.html"><strike>Call For Tutorial</strike></a></li>
+                            <li><a class="ex2" href="reviewer.html"><strike>Become a reviewer</strike></a></li>
+                        </ul>
+                        <div class="w3-panel w3-round-xlarge w3-blue w3-left-align " style="width:80%">
+                            <center><h4>Contact Details<br>
+                                    Prof. Nar Singh<br>
+                                    Dr. Ashish Khare<br>
+                                    Department of Electronics and Communication<br>
+                                    University of Allahabad, Allahabad, India<br>
+                                    Email – ic3e2018@gmail.com<br>
+                                    Contact- 9452401191, 9454626223</h4></center>
+
+
+                        </div>
+                    </div>
+                    <div class="w3-half">
+                        <h2 style="color:red"><b>Latest News</b></h2>
+                        <table class="w3-table-all" style="font-weight: bold;">
+                        	<tr><td>1. All accommodation request received from delegates are confirmed. For accommodation and travel please call Mr. Kamal Kishor Upadhyay at 9838906769 or Mr. Nikhlesh Mishra at 8808322911, when you are reaching near to Allahabad.<br>In case you have any difficulty please call to convener</td></tr>
+                        	<tr><td>2. Conference schedule has been updated.</td></tr>
+                        	<tr><td>3. Authors who require accommodation are required to drop request on conference mail with your arrival details.</td></tr>
+                        </table>
+                        <h5 style="color:red;padding-left: 10px;"><b></b></h5>
+                        <h5 style="color:blue;padding-left: 10px;"><b></b></h5>
+                        <h5 style="color:red;padding-left: 10px;"><b></b></h5>
+                        <br>
+                        <br>
+                        <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+                        <div style="width:100%; height:75px;">
+                            <div style="float:left;"><img src="design/img/DATE.gif" /></div>
+                            <div class="blockfont" style="float:left; width:320px; height:75px; text-align:center; margin:0px auto; background:#eee;">
+                                <div style="padding-top:15px;"><strong>13th to 15th<br>April, 2018</strong></div>
+                            </div>
+                        </div>
+                        <div style="height:13px"></div>
+                        <div style="width:100%; clear:both; height:90px;">
+                            <div style="float:left; height:90px; background:#219777;"><img src="design/img/VENUE.gif" style="padding-top:6px;" /></div>
+                            <div style="float:left; height:90px; width:320px; text-align:center; background:#eee;"><b>
+                                <div class="blockfont" style="text-align:center; margin:0px auto; padding-top:15px;">J K Institute of Applied Physics and Technology</div>
+                                <div class="smallfont">University of Allahabad, Allahabad <br/>
+                                </div> </b>
+                            </div>
+                        </div>
+                        <!-- <div style="height:13px"></div>
+                        <div style="width:100%; clear:both; height:85px;">
+                            <div style="float:left; height:115px; background:#b8462c;"><img src="design/img/TARGETDATE.gif" style="padding-top:20px;" /></div>
+                            <div style="float:left; height:115px; width:320px; text-align:center; margin:0px auto; background:#eee;">
+                                <div class="blockfont" style="padding-top:35px;">Author Registration<br><strong>31st March, 2018</strong></div>
+                            </div>
+                        </div> -->
+                        <br>
+                        <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+                        <h2 style="color:red"><b>Sponsored By</b><img src="design/img/st.PNG" title="Department of Science and Technology, New Delhi" style="padding-top:5px;padding-left: 10px;min-width: 40%;max-width: 80%"><br><img src="design/img/cs.PNG" title="Council of Scientific & Industrial Research" style="padding-top:5px;padding-left: 10px;min-width: 40%;max-width: 80%"><br><img src="design/img/drdol.png" title="Defence Research and Development Organization - DRDO" style="padding-top:5px;padding-left: 10px;min-width: 40%;max-width: 80%"></h2>
+                    </div>
+                </div>
+
+
+            <br>
+
+            <footer class="w3-container w3-black">
+                <div class="copyright" id="copyright">
+                    <h5 style="text-align: center">Copyright ©2018 J K Institute, University of Allahabad. All Rights Reserved.
+
+                        <div style="float:right">
+                            <a href="#" class="back-to-top">
+                                <img src="design/img/arrow.jpg" title="Back to top" style="text-align:left" width="25" height="25"></a>
+                        </div>
+                    </h5> 
+                </div>
+            </footer>
+
+
+            <!-- Important Dates -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2 class="w3-center"><i class="fas fa-calendar-alt"></i>Important Dates</h2>
+                </div>
+                <div class="modal-body">
+                    <blockquote>
+                        <div class="w3-row">
+
+                            Paper submission: <span class="w3-red"><b>Closed</b></span>
+                            <!-- <span class="changed">05th March, 2018</span><b>&nbsp;&nbsp;08th March, 2018 (No further Extension)</b> --><br>
+                            Acceptance/Rejection notification: <span class="w3-red"><b>Communicated to Authors</b></span><br>
+                            Camera ready:<b>31st March, 2018</b><br>
+                            Author registration: <b>31st March, 2018</b><br>
+                            Conference date: <b>13th - 15th April , 2018</b><br>
+
+
+
+                        </div>
+                    </blockquote>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112794009-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112794009-1');
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
+</body>
+
+
+</html>

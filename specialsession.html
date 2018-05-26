@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <title>The Conference | JK Institute | University of Allahabad</title>
+    <link rel="icon" href="design/img/jklogo15.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design/w3.css">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/icon.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        h1{
+            color:white;
+            font-family: serif;
+        }
+        h3{
+            color:purple;
+        }
+        h3{
+            font-family: serif;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+            display: none;
+        }
+        /*.w3-row{
+            max-width: 95%;
+            margin: 0 auto;
+        }*/
+
+        a.ex2:link{
+            text-decoration: none;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <body>
+        <div class="Container">
+            <header style="background-color:black">
+                <div class="w3-row">
+                    <div class="w3-col">
+                        <a href="index.html" style="text-decoration:none">
+                            <div id="logo" style="float: center;">
+                                <img src="design/img/logon.jpg" width="100%">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Navbar -->
+<ul class="w3-navbar w3-theme-d2 w3-left-align w3-black w3-medium">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li style="width:8.5%"><a href="index.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:16%"><a href="icetcce.html"><i class="w3-margin-right"></i>The Conference<br>IC3E-2018</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:18%"><a href="accepted.html"><i class="w3-margin-center"></i>List of Accepted Papers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="schedule.html"><i class="w3-margin-center"></i>Schedule</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:11%"><a href="speakers.html"><i class="w3-margin-center"></i>Invited<br>Speakers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="committees.html"><i class="w3-margin-center"></i>Committees</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10.5%"><a href="registration.html"><i class="w3-margin-right"></i>Registration</a></li>
+
+    <li class="w3-dropdown-hover w3-hide-small" style="width:16%">
+        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="allahabad.html">The Allahabad</a>
+            <a href="reachald.html">How to reach Allahabad</a>
+            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+            <a href="reachjk.html">How to reach J K Institute</a>
+        </div>
+    </li>
+            </ul>
+
+
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-black w3-medium"> 
+                    <li class="w3-dropdown-hover"><a href="icetcce.html">The Conference IC3E-2018</a></li>
+                    <li class="w3-dropdown-hover"><a href="accepted.html">List of Accepted Papers</a></li>
+                    <li class="w3-dropdown-hover"><a href="schedule.html">Schedule</a></li>
+                    <li class="w3-dropdown-hover"><a href="speakers.html">Invited Speakers</a></li>
+                    <li class="w3-dropdown-hover"><a href="committees.html">Committees</a></li>
+                    <li class="w3-dropdown-hover"><a href="registration.html">Registration</a></li>
+
+                    <li class="w3-dropdown-hover">
+                        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-purple w3-card-4">
+                            <a href="allahabad.html">The Allahabad</a>
+                            <a href="reachald.html">How to reach Allahabad</a>
+                            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                            <a href="reachjk.html">How to reach J K Institute</a>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-container">
+                    <center>
+                        <h3 style="color:purple">Special Session on Frontiers in Multimedia Analytics</h3>
+                    </center>
+                </div>
+                <div style="height:1px; background-color:#AAAAAA; clear:both; width:70%; margin:0px auto; margin-bottom:5px;"></div>
+
+                <div class="w3-container">
+                    <blockquote>
+                        <div class="w3-row">
+                            <h2 style="color: red"><center><b>Special Session on
+                                        Frontiers in Multimedia Analytics: </b> Advancements in Critical Multimedia Systems and its Applications
+                                </center></h2>
+                            <br>
+                            <h3><b>Call for Papers</b></h3>
+
+                            <p>We live in the world where everything is based on media files and systems. Multimedia name itself states two things i.e. Multi and Media, stores and transmits the media data (text and graphic) over web.  It has information in the form of image, audio/music, video and etc. Multimedia plays a very important role in day to day life of any common person. Thus it has become the best way to communicate and understand the information from other person and outside world. It has vast range of applications such as techno-schools, advertisements, share marketing, healthcare, engineering, social media, electronic news papers, network data transmission, virtual data hiding i.e. watermarking, video surveillance, public places (trains, railways, libraries etc.).  Hence in all these applications multimedia information has to be stored in computer system with high level of indexing so that the data can be retrieved and transmitted over web fast and efficiently. Thus it is required to enhance and develop novel techniques at various stages of the multimedia based product/machine development.</p>
+                            <p>Recent advancements in electronic multimedia systems such as smart phones, Digitized cameras, advanced gaming consoles and etc had expanded the scope of inventing new critical mechanisms/techniques in data storage, retrieval, transformation and security.  This emerging critical multimedia data will include the data like: Image data, Audio data, Video data, Sensor data, Social media data, Network data and etc. This high dimension data needs to be efficiently indexed for fast storage and retrieval. The traditional multimedia system techniques which may work at lower scales might not be suitable for vide and massive data. To successfully build advanced and critical multimedia systems we need new techniques at various stages of the product/machine development such as preprocessing, segmentation, object recognition, feature extraction, indexing, secured data transmission and etc. Thus multimedia analytics had gained more importance in the recent research and literature for various applications like dynamic video storytelling, image/video summarization, image/video retrieval, image/video stenography, Picture Archiving and Communication Systems (PACS) in medical imaging technology and etc.</p>
+                            <p>This special session will examine the frontier of developing novel multimedia applications using advanced techniques in image and signal processing. It is also aimed to discuss pitfalls in state-of-the-art approaches of emerging multimedia analytics. Some of them are social media data mining, multimedia based location recognition, contextual multimedia modeling, Annotation and semantic analysis of multimedia data, multimedia affection computing and finally performance evaluation for emerging multimedia analytics techniques and applications.</p>
+                            <br>
+                            <h3>The technical topics of interest include, but are not limited to:</h3>
+
+
+                            <ul>
+                                <li>Multi-model data learning using Machine learning.</li>
+                                <li>Multimedia Application for Internet of Things (IoT)</li>
+                                <li>Big Multimedia Data Processing</li>
+                                <li>Multimedia in Biomedical Imaging</li>
+                                <li>Multimedia for computer vision</li>
+                                <li>Multimedia applications in smart city</li>
+                                <li>AI in Multimedia</li>
+                                <li>Network Virtualization using Multimedia</li>
+                                <li>Multimedia data security</li>
+                                <li>Analysis and mining of visual data</li>
+                                <li>Interactive Multimedia: 5D, 7D etc</li>
+                                <li>Multimedia Retrieval Applications</li>
+                                <li>Pattern Analysis</li>
+                            </ul>                     
+
+                            <br>
+                            <h3><b>Session Organizers</b></h3>
+                            <ul style="list-style-type:circle">
+                                <li><b>Dr Rajitha Bakthula</b>  (Assistant Professor, CSED, MNNIT Allahabad)<br/>Email: rajitha@mnnit.ac.in</li>
+                                <li><b>Prof. Suneeta Agarwal </b>(Professor, CSED, MNNIT Allahabad)<br/>Email:	suneeta@mnnit.ac.in</li>
+                            </ul>
+                            <br>
+                            <h3><b>Paper Submission Guidelines</b></h3>
+                            <p>All submissions should be in English with a maximum paper length of eight (8) pages. See conference web site for detailed formatting instructions.</p>
+
+                            <h3><b>Paper Submission Guidelines</b></h3>
+                            <ul style="list-style-type:square">
+                                <li>Paper submission deadline: March 15th 2018</li>
+                                <li>Acceptance Notification: March 30th 2018</li>
+                                <li>Camera-Ready: April 4th 2018</li>
+                            </ul>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <footer class="w3-container w3-black">
+                <div class="copyright" id="copyright">
+                    <h5 style="text-align: center">Copyright ©2018 J K Institute, University of Allahabad. All Rights Reserved.                
+                        <div style="float:right">
+                            <a href="#" class="back-to-top">
+                                <img src="design/img/arrow.jpg" title="Back to top" style="text-align:left" width="25" height="25">
+                            </a>
+                        </div>
+                    </h5> 
+                </div>
+            </footer>   
+        </div>
+    </body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112794009-1"></script>
+    <script>
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag() {
+                                dataLayer.push(arguments);
+                            }
+                            gtag('js', new Date());
+
+                            gtag('config', 'UA-112794009-1');
+
+                            // Used to toggle the menu on smaller screens when clicking on the menu button
+                            function openNav() {
+                                var x = document.getElementById("navDemo");
+                                if (x.className.indexOf("w3-show") == -1) {
+                                    x.className += " w3-show";
+                                } else {
+                                    x.className = x.className.replace(" w3-show", "");
+                                }
+                            }
+    </script>
+</html>

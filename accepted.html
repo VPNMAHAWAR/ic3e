@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <title>The Conference | JK Institute | University of Allahabad</title>
+    <link rel="icon" href="design/img/jklogo15.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design/w3.css">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/icon.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        h1{
+            color:white;
+            font-family: serif;
+        }
+        h3{
+            color:purple;
+        }
+        h3{
+            font-family: serif;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+            display: none;
+        }
+        /*.w3-row{
+            max-width: 95%;
+            margin: 0 auto;
+        }*/
+
+        a.ex2:link{
+            text-decoration: none;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <body>
+        <div class="Container">
+
+            <header style="background-color:black">
+                <div class="w3-row">
+                    <div class="w3-col">
+                        <a href="index.html" style="text-decoration:none"><div id="logo" style="float: center;">
+
+                                <img src="design/img/logon.jpg" width="100%">
+                            </div></a>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Navbar -->
+<ul class="w3-navbar w3-theme-d2 w3-left-align w3-black w3-medium">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li style="width:8.5%"><a href="index.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:16%"><a href="icetcce.html"><i class="w3-margin-right"></i>The Conference<br>IC3E-2018</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:18%"><a href="accepted.html"><i class="w3-margin-center"></i>List of Accepted Papers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="schedule.html"><i class="w3-margin-center"></i>Schedule</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:11%"><a href="speakers.html"><i class="w3-margin-center"></i>Invited<br>Speakers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="committees.html"><i class="w3-margin-center"></i>Committees</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10.5%"><a href="registration.html"><i class="w3-margin-right"></i>Registration</a></li>
+
+    <li class="w3-dropdown-hover w3-hide-small" style="width:16%">
+        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="allahabad.html">The Allahabad</a>
+            <a href="reachald.html">How to reach Allahabad</a>
+            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+            <a href="reachjk.html">How to reach J K Institute</a>
+        </div>
+    </li>
+            </ul>
+
+
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-black w3-medium"> 
+                    <li class="w3-dropdown-hover"><a href="icetcce.html">The Conference IC3E-2018</a></li>
+                    <li class="w3-dropdown-hover"><a href="accepted.html">List of Accepted Papers</a></li>
+                    <li class="w3-dropdown-hover"><a href="schedule.html">Schedule</a></li>
+                    <li class="w3-dropdown-hover"><a href="speakers.html">Invited Speakers</a></li>
+                    <li class="w3-dropdown-hover"><a href="committees.html">Committees</a></li>
+                    <li class="w3-dropdown-hover"><a href="registration.html">Registration</a></li>
+
+                    <li class="w3-dropdown-hover">
+                        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-purple w3-card-4">
+                            <a href="allahabad.html">The Allahabad</a>
+                            <a href="reachald.html">How to reach Allahabad</a>
+                            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                            <a href="reachjk.html">How to reach J K Institute</a>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-row">
+                <div class="w3-container">
+                    <center>
+                        <h3 style="color:purple"><strong>List of Accepted Papers</strong></h3>
+                    </center>
+                </div>
+                <div style="height:1px; background-color:#AAAAAA; clear:both; width:70%; margin:0px auto; margin-bottom:5px;"></div>
+                <br>
+                <div class="w3-container w3-responsive">
+                    <table class="w3-table-all" style="align-content: center">
+                        <tr>
+                            <th>Paper#</th>
+                            <th>Authors, Title</th>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Rishabh Bhooshan Mishra, S Santosh Kumar and Ravindra Mukhiya. Design and Simulation of Capacitive Pressure Sensor for Blood Pressure Sensing Application</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Sharmistha Adhikari and Sangram Ray. A Lightweight and Secure IoT Communication Framework in Content Centric Network using Elliptic Curve Cryptography</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Sikandar Sikandar and Km. Kamakshi. Analysis of Plus Shape Slot Loaded Circular Microstrip Antenna</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Shrabanti Mandal, Girish Kumar Singh and Anita Pal. A Constraints Driven PSO Based Approach for Text Summarization</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Laxman Saha, Satyabrata Das and Aparna Das. Antipodal number of complete binary trees</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Atul Uttam and Sasmita Behera. ToA Localization Using Two BTSs and Three BTSs In GSM Network</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Tasleem Jamal, Misbahul Haque, Mohd Imran and Mohammad Abdul Qadeer. LTE Network: Performance analysis based on Operating Frequency</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Anil Kumar C and Rajendra Naik B. An Approach Based on Compressive Sensing and FrWT for Secure Image Transmission</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Vishal Kesari. Magnetic Field Sensitivity in a Depressed Collector for Millimeter-wave Gyrotron</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Anupam Yadav and Ashish Sharma. Function Point Based Estimation of Effort and Cost in Agile Software Development.</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Awadhesh Singh and Nar Singh. Comparative Response Evaluation of Multilevel PSK and QAM Schemes</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Pratima Yadav and Nagendra Pratap Singh. Classication of normal and abnormal retinal image by using feature based machine learning approach</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Shalini Rai and Rajeev Srivastava. FPGA Realization of Scale Free CORDIC Algorithm Based Window Functions</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>Rohit Kumar, Raghavendra Pal, Arun Prakash and Rajeev Tripathi. A COLLECTIVE SCHEDULING ALGORITHM FOR VEHICULAR AD HOC NETWORK</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>Shashi Prabha and Raghav Yadav. Trusted-Differential Evolution Algorithm For Mobile Ad-Hoc Networks</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>Kurmendra ., Rajesh Kumar and Osor Pertin. Design of an improved micro-electro-mechanical systems switch for RF Communication System</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>Arvind Kumar, Sunil Kumar, Prateek Gautam, Akshay Verma and Tarique Rashid. Performance Evaluation of Multi-Operands Floating Point Adder</td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>Amrish Kumar, Abhinav Gupta and Sanjeev Rai. A Comparative Analysis of Asymmetrical and Symmetrical Double Metal Double Gate SOI-MOSFETs at the Zero Temperature-Coefficient Bias Point</td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>Yogesh Tripathi, Arun Prakash and Rajeev Tripathi. A Delay Oriented Energy Efficient Routing Protocol for Wireless Sensor Network</td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>Yogesh Tripathi, Arun Prakash and Rajeev Tripathi. An Energy Balanced Cluster Based Routing Protocol for Wireless Sensor and Actuator Network</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>Bandan Bhoi, Neeraj Misa and Rasmishree Rout. An Explicit Cell-Based Nesting Robust Architecture And Analysis of Full Adder</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>Rahul Chandra Kushwaha, Achintya Singhal and Santanu Kumar Swain. Learning Pattern Analysis: A Case Study of Moodle Learning Management System</td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>Shashi Kumar. Fractal Geometry with Enhanced Bandwidth using Periodically Capacitive Loading Structure</td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>Roopam Sadh and Rajeev Kumar. EDM Framework for Knowledge Discovery in Educational Domain</td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td>Muskaan Singh, Ravinder Kumar and Inderveer Chana. GA based Machine Translation System for Sanskrit to Hindi Language</td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td>Himanshu Sahu and Neha Sharma. A New Framework for collecting implicit user feedback For Movie Recommendation System</td>
+                        </tr>
+                        <tr>
+                            <td>86</td>
+                            <td>Prashant Srivastava, Arati Kushwaha and Ashish Khare. Content-Based Image Retrieval using Local Binary Pattern and Speeded-Up Robust Feature</td>
+                        </tr>
+                        <tr>
+                            <td>87</td>
+                            <td>Laxman Kumar, Sudipta Roy, Vatsal Sanghvi and Raj Geriya. Music Tagging and Similarity Analysis for Recommendation and plagiarism Detection</td>
+                        </tr>
+                        <tr>
+                            <td>98</td>
+                            <td>Divesh Kumar and Dheeraj Kalra. Analysis of Photonic Crystal Fiber Based Micro-Strain Sensor</td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>Lalit Kumar and Kusum Kumari Bharti. An Improved BPSO Algorithm for Feature Selection</td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>Nivedita Kar, Ankita Kar and C.K. Dwivedi. Prospective of Automation for Checkbook Method in Cultivating Allium cepa</td>
+                        </tr>
+                        <tr>
+                            <td>115</td>
+                            <td>Sugandha Yadav. low power SAR ADC based on charge redistribution using double tail comparator</td>
+                        </tr>
+                        <tr>
+                            <td>116</td>
+                            <td>Mahdi Khosravy, Nilesh Patel, Neeraj Gupta and Ishwar Sethi. Image Quality Assessment: A Review to Full Reference Indexes</td>
+                        </tr>
+                        <tr>
+                            <td>119</td>
+                            <td>Neelesh Agrawal, Jamshed Ansari, Navendu Nitin and Mohd Siddiqui. Design and Analysis of W-Slot Microstrip Antenna</td>
+                        </tr>
+                        <tr>
+                            <td>123</td>
+                            <td>Shivani Singh and Gagandeep Bharti. A Multi-Band Antenna with Enhanced Bandwidth for Wireless Applications using Defected Ground Structure</td>
+                        </tr>
+                        <tr>
+                            <td>128</td>
+                            <td>Sarika Yadav and Rama Shankar Yadav. Redundancy Elimination during Data Aggregation in Wireless Sensor IoT Systems</td>
+                        </tr>
+                        <tr>
+                            <td>133</td>
+                            <td>Gargi Srivastava and Rajeev Srivastava. An Improved Active Contour Model for Salient Object Detection using Edge Cues</td>
+                        </tr>
+                        <tr>
+                            <td>134</td>
+                            <td>Ankit Kumar Jaiswal and Rajeev Srivastava. CMFD Using Shift Invariant SWT and Block Division Mean Features</td>
+                        </tr>
+                        <tr>
+                            <td>137</td>
+                            <td>Md. Khaliluzzaman and Kaushik Deb. A Vision Based Real-time Driver Identity Recognition and Attention Monitoring System</td>
+                        </tr>
+                        <tr>
+                            <td>138</td>
+                            <td>Reddymounika Bommisetty, Asish Khare and Om Prakash. Shot Boundary Detection based Key frame Extraction using Zero Normalized Pixel Correlation coefficient and Higher order Color Moments</td>
+                        </tr>
+                        <tr>
+                            <td>143</td>
+                            <td>Arati Kushwaha, Om Prakash and Ashish Khare. Dense Flow based Video Object Segmentation in Dynamic Scenario</td>
+                        </tr>
+                        <tr>
+                            <td>145</td>
+                            <td>Vinit Jaiswal, Divya Sharma, Y. K. Prajapati and Rajeev Tripathi. Performance Optimization of Carving Signal RZ-DQPSK Modulation Scheme</td>
+                        </tr>
+                        <tr>
+                            <td>148</td>
+                            <td>Hyunsu Jeong, Jeonghwan Gwak, Cheolbin Park, Om Prakash and Jong-In Song. Enabling More Accurate Bounding Boxes for Deep Learning-based Real-time Human Detection</td>
+                        </tr>
+                        <tr>
+                            <td>150</td>
+                            <td>Dheeraj Kalra, Manish Kumar and Abhay Chaturvedi. Design of High Gain CG-CS 3.1-10.6 GHz UWB CMOS Low Noise Amplifier</td>
+                        </tr>
+                        <tr>
+                            <td>152</td>
+                            <td>Arun Kumar Singh, Sheo Kumar Mishra and Saurabh Dixit. Energy Efficiency in Wireless Sensor Networks: Cooperative MIMO-OFDM</td>
+                        </tr>
+                        <tr>
+                            <td>153</td>
+                            <td>Shivani Mishra. Forensic Investigation Framework for Complex Cyber Attack on Cyber Physical System by Using goals/Sub Goals of an Attack and Epidemics of Malware in a Sys-tem</td>
+                        </tr>
+                        <tr>
+                            <td>155</td>
+                            <td>Kamal Kishor Upadhyay, Vanya Arun, Saumya Srivastava, Narendra Kumar Shukla and Nikhlesh Kumar Mishra. Design and Performance Analysis of Reversible XOR Logic Gate</td>
+                        </tr>
+                        <tr>
+                            <td>159</td>
+                            <td>Brajesh Singh and Dr. Awadhesh Kumar. Stabilization and Control of Magnetic Levitation System using 2-Degree-of-Freedom PID Controller</td>
+                        </tr>
+                        <tr>
+                            <td>160</td>
+                            <td>Gurwinder Singh, Birmohan Singh and Manpreet Kaur. Analysis of Electroencephalogram for the recognition of Epileptogenic area using Ensemble Empirical Mode decomposition</td>
+                        </tr>
+                        <tr>
+                            <td>161</td>
+                            <td>Abhishek Saroj, Mohd. Gulman Siddiqui, Devesh Tiwari and Jamshed A. Ansari. Study the Effect of Ground on Circular Loop Patch Antenna (CLPA)</td>
+                        </tr>
+                        <tr>
+                            <td>163</td>
+                            <td>Manish Khare, Prashant Srivastava and Moongu Jeon. Recognition of Human Activities in Daubechies Complex Wavelet Domain</td>
+                        </tr>
+                        <tr>
+                            <td>165</td>
+                            <td>Abdus Samad and Savita Gautam. Level-wise Scheduling Algorithm for Linearly Extensible Multiprocessor Systems</td>
+                        </tr>
+                        <tr>
+                            <td>166</td>
+                            <td>Brij Bansh Anchal, Preetam Singh and Ram Pyare. Development of nano-rough Zn0.92 Fe0.08 O thin film by high electro-spin technique via solid state route and verify as methane sensor</td>
+                        </tr>
+                        <tr>
+                            <td>167</td>
+                            <td>Shiksha Singh and Nagendra Pratap Singh. Machine Learning based Classification of Good and Rotten Apple</td>
+                        </tr>
+                        <tr>
+                            <td>168</td>
+                            <td>Ankit Patel, Komal Jaiswal, Shekhar Yadav, Karunesh Srivastava, Akhilesh Pandey and Rajeev Singh. A Compact Inverted V-shaped slotted Triple and Wideband Patch Antenna for K, Ka and Ku band Applications</td>
+                        </tr>
+                        <tr>
+                            <td>171</td>
+                            <td>Prateek Sharma, Pranjali Kokare and Maheshkumar Kolekar. Performance Comparison of KLT and CAMSHIFT Algorithms for Video Object Tracking</td>
+                        </tr>
+                        <tr>
+                            <td>181</td>
+                            <td>Manish Jaiswal, Anima Srivastava and Tanveer J. Siddiqui. Machine Learning Algorithms for Anemia disease Prediction</td>
+                        </tr>
+                        <tr>
+                            <td>183</td>
+                            <td>Karthikeyan Selvaraj, Rizwan Patan and Balamurugan B. Enhancement of Security in the Internet of Things (IoT) by using X.509 Authentication Mechanism</td>
+                        </tr>
+                        <tr>
+                            <td>184</td>
+                            <td>Shekhar Yadav, Komal Jaiswal, Ankit Patel, Sweta Singh, Rajeev Singh and Akhilesh Pandey. Notch Loaded Patch Antenna with Multiple Shorting for X and K Band Applications</td>
+                        </tr>
+                        <tr>
+                            <td>186</td>
+                            <td>Manoj Kumar Sharma, Renu Vig and Gagandeep Sahib. Effect of Secondary Path Lengths in the Performance of FxLMS and Virtual Sensing based ANC System</td>
+                        </tr>
+                        <tr>
+                            <td>188</td>
+                            <td>Pawan Kumar Upadhyay and Satish Chandra. An Acceleration of Improved Segmentation Methods for Dermoscopy Images using GPU</td>
+                        </tr>
+                        <tr>
+                            <td>195</td>
+                            <td>Sejeong Lee, Jeonghwan Gwak, Manish Khare, Ashish Khare and Moongu Jeon. Comparative Study on Person Re-identification using Shape and Color-based Human Body Part Matching</td>
+                        </tr>
+                        <tr>
+                            <td>196</td>
+                            <td>Jeonghwan Gwak. Deep Leaning-based Approach for Mental Workload Stages Discrimination from Multi-Channel fNIRS</td>
+                        </tr>
+                        <tr>
+                            <td>198</td>
+                            <td>Rakesh Kumar, Selvakumar G, Valluri Sarimela and Shashikant Chaudhari. Framework for Intelligent Software Defined Networking For Wired and Wireless Networks</td>
+                        </tr>
+                        <tr>
+                            <td>200</td>
+                            <td>Ujjawala Yati and Mantosh Biswas. Dual Discrete Wavelet Transform Based Image Fusion Using Averaging Principal Component</td>
+                        </tr>
+                        <tr>
+                            <td>201</td>
+                            <td>Abhishek Gandhar, Sunil Gupta and Shashi Gandhar. Improvement of Voltage stability index in Wind Power Systems using ANFIS tuned STATCOM</td>
+                        </tr>
+                        <tr>
+                            <td>205</td>
+                            <td>Chandni . and Alok Kumar Singh Kushwaha. Delving Deeper with Dual-Stream CNN for Activity Recognition</td>
+                        </tr>
+<!--                         <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+ -->
+                    </table>
+                </div>
+            </div>
+            <br>
+            <br>
+            <footer class="w3-container w3-black">
+                <div class="copyright" id="copyright">
+                    <h5 style="text-align: center">Copyright ©2018 J K Institute, University of Allahabad. All Rights Reserved.
+
+                        <div style="float:right">
+                            <a href="#" class="back-to-top">
+                                <img src="design/img/arrow.jpg" title="Back to top" style="text-align:left" width="25" height="25"></a>
+                        </div>
+                    </h5> 
+                </div>
+            </footer>
+        </div>
+
+    </body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112794009-1"></script>
+    <script>
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag() {
+                                dataLayer.push(arguments);
+                            }
+                            gtag('js', new Date());
+
+                            gtag('config', 'UA-112794009-1');
+
+                            // Used to toggle the menu on smaller screens when clicking on the menu button
+                            function openNav() {
+                                var x = document.getElementById("navDemo");
+                                if (x.className.indexOf("w3-show") == -1) {
+                                    x.className += " w3-show";
+                                } else {
+                                    x.className = x.className.replace(" w3-show", "");
+                                }
+                            }
+    </script>
+</html>

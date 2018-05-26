@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <title>The Conference | JK Institute | University of Allahabad</title>
+    <link rel="icon" href="design/img/jklogo15.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design/w3.css">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/icon.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        h1{
+            color:white;
+            font-family: serif;
+        }
+        h3{
+            color:purple;
+        }
+        h3{
+            font-family: serif;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+            display: none;
+        }
+        /*.w3-row{
+            max-width: 95%;
+            margin: 0 auto;
+        }*/
+
+        a.ex2:link{
+            text-decoration: none;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <!--Style for table -->
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;margin-top: 10px;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 17px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 17px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+        .tg .tg-yw4l{vertical-align:top}
+        .tg .tg-9hbo{font-weight:bold;vertical-align:top}
+    </style>
+    <body>
+        <div class="Container">
+            <header style="background-color:black">
+                <div class="w3-row">
+                    <div class="w3-col">
+                        <a href="index.html" style="text-decoration:none">
+                            <div id="logo" style="float: center;">
+                                <img src="design/img/logon.jpg" width="100%">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Navbar -->
+<ul class="w3-navbar w3-theme-d2 w3-left-align w3-black w3-medium">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li style="width:8.5%"><a href="index.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:16%"><a href="icetcce.html"><i class="w3-margin-right"></i>The Conference<br>IC3E-2018</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:18%"><a href="accepted.html"><i class="w3-margin-center"></i>List of Accepted Papers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="schedule.html"><i class="w3-margin-center"></i>Schedule</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:11%"><a href="speakers.html"><i class="w3-margin-center"></i>Invited<br>Speakers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="committees.html"><i class="w3-margin-center"></i>Committees</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10.5%"><a href="registration.html"><i class="w3-margin-right"></i>Registration</a></li>
+
+    <li class="w3-dropdown-hover w3-hide-small" style="width:16%">
+        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="allahabad.html">The Allahabad</a>
+            <a href="reachald.html">How to reach Allahabad</a>
+            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+            <a href="reachjk.html">How to reach J K Institute</a>
+        </div>
+    </li>
+            </ul>
+
+
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-black w3-medium"> 
+                    <li class="w3-dropdown-hover"><a href="icetcce.html">The Conference IC3E-2018</a></li>
+                    <li class="w3-dropdown-hover"><a href="accepted.html">List of Accepted Papers</a></li>
+                    <li class="w3-dropdown-hover"><a href="schedule.html">Schedule</a></li>
+                    <li class="w3-dropdown-hover"><a href="speakers.html">Invited Speakers</a></li>
+                    <li class="w3-dropdown-hover"><a href="committees.html">Committees</a></li>
+                    <li class="w3-dropdown-hover"><a href="registration.html">Registration</a></li>
+
+                    <li class="w3-dropdown-hover">
+                        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-purple w3-card-4">
+                            <a href="allahabad.html">The Allahabad</a>
+                            <a href="reachald.html">How to reach Allahabad</a>
+                            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                            <a href="reachjk.html">How to reach J K Institute</a>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-row">
+                <div class="w3-container">
+                    <center>
+                        <h3 style="color:purple">Registration Form</h3>
+                    </center>
+                </div>
+                <div style="height:1px; background-color:#AAAAAA; clear:both; width:70%; margin:0px auto; margin-bottom:5px;"></div>
+                <br>
+
+                <div class="w3-container">
+                    <blockquote>
+                        <p>
+                            <b>
+                                After the payment done you can proceed to fill the following <u><a href="https://goo.gl/forms/R7pCNSqGFo4ufbYh2" class="ex2" target="_blank">Google Form.</a></u>
+                                <br>
+                                Or you can get a copy of form <u><a href="/design/Conference Registration.pdf" class="ex2" target="_blank">from here</a></u> and mail it along with payment information to : ic3e2018@gmail.com
+                            </b>
+                        </p>
+                        <br>
+
+
+                        <div >
+                            <div class="w3-container">
+                                <center>
+                                    <h3 style="color:purple">Registration Fee</h3>
+                                </center>
+                                <div style="height:1px; background-color:#AAAAAA; clear:both; width:80%; margin:0px auto; margin-bottom:5px;"></div>
+                            </div>
+                            <br>
+
+
+                            <div class="w3-responsive">
+                                <table class="w3-table-all" style="align-content: center">
+                                    <tr>
+                                        <th></th>
+                                        <th>With Papers (Early bird registration)<br/>(Upto 26th March, 2018)</th>
+                                        <th>With Papers (Late registration)<br/>(After 26th March, 2018)</th>
+                                        <th>With presentations in Showcase session</th>
+                                        <th>Without Papers</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Delegates (Members)*</td>
+                                        <td>6000 (INR)</td>
+                                        <td>6500 (INR)</td>
+                                        <td>5000 (INR)</td>
+                                        <td>4000 (INR)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delegates (Nonmembers)</td>
+                                        <td>6500 (INR)</td>
+                                        <td>7000 (INR)</td>
+                                        <td>5500 (INR)</td>
+                                        <td>4500 (INR)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Students (Members)*</td>
+                                        <td>3000 (INR)</td>
+                                        <td>3500 (INR)</td>
+                                        <td>2500 (INR)</td>
+                                        <td>2000 (INR)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Students (Nonmembers)</td>
+                                        <td>3500 (INR)</td>
+                                        <td>4000 (INR)</td>
+                                        <td>3000 (INR)</td>
+                                        <td>2500 (INR)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Foreign Delegates</td>
+                                        <td>350 (USD)</td>
+                                        <td>400 (USD)</td>
+                                        <td>300 (USD)</td>
+                                        <td>250 (USD)</td>
+                                    </tr>
+                                </table> 
+                            </div>
+                        </div>
+                        <p>
+                            <b>
+                                *Member of any national or international academic body
+                            </b>
+                        </p>
+
+                        <div>
+                            <div class="w3-container">
+                                <center>
+                                    <h3 style="color:purple">Payment Information</h3>
+                                </center>
+                                <div style="height:1px; background-color:#AAAAAA; clear:both; width:80%; margin:0px auto; margin-bottom:5px;"></div>
+                            </div>
+                            <b>
+                                <p>
+                                    You can transfer the registration fee in following bank account:<br>
+                                <div class="w3-card w3-blue w3-round-xxlarge w3-container"><br>
+                                    Beneficiary Bank : United Bank of India <br>
+                                    Branch : Tagore Town, Allahabad - 211002, INDIA <br>
+                                    IFS Code : UTBI0TAG507 (5th and 10th characters are 'zero')<br>
+                                    SWIFT Code : UTBIINBBDEL<br>
+                                    Name of Payee account Holder :<br>
+                                    &nbsp;&nbsp;&nbsp;Student Welfare Fund, Department of Electronics & Communication, University of Allahabad <br>
+                                    Account No. : 0270010207140 <br><br>
+                                </div>
+                                </p>
+
+                            </b>
+
+                        </div>
+                        <br>
+
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+
+            <footer class="w3-container w3-black">
+                <div class="copyright" id="copyright">
+                    <h5 style="text-align: center">Copyright ©2018 J K Institute, University of Allahabad. All Rights Reserved.
+
+                        <div style="float:right">
+                            <a href="#" class="back-to-top">
+                                <img src="design/img/arrow.jpg" title="Back to top" style="text-align:left" width="25" height="25"></a>
+                        </div>
+                    </h5> 
+                </div>
+            </footer>
+    </body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112794009-1"></script>
+    <script>
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag() {
+                            dataLayer.push(arguments);
+                        }
+                        gtag('js', new Date());
+
+                        gtag('config', 'UA-112794009-1');
+
+                        // Used to toggle the menu on smaller screens when clicking on the menu button
+                        function openNav() {
+                            var x = document.getElementById("navDemo");
+                            if (x.className.indexOf("w3-show") == -1) {
+                                x.className += " w3-show";
+                            } else {
+                                x.className = x.className.replace(" w3-show", "");
+                            }
+                        }
+    </script>
+
+</html>

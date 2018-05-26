@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <title>The Conference | JK Institute | University of Allahabad</title>
+    <link rel="icon" href="design/img/jklogo15.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design/w3.css">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/icon.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style type="text/css">
+	.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+        h1{
+            color:white;
+            font-family: serif;
+        }
+        h3{
+            color:purple;
+        }
+        h3{
+            font-family: serif;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+            display: none;
+        }
+        /*.w3-row{
+            max-width: 95%;
+            margin: 0 auto;
+        }*/
+
+        a.ex2:link{
+            text-decoration: none;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <body>
+        <div class="Container">
+            <header style="background-color:black">
+                <div class="w3-row">
+                    <div class="w3-col">
+                        <a href="index.html" style="text-decoration:none"><div id="logo" style="float: center;">
+
+                                <img src="design/img/logon.jpg" width="100%">
+                            </div></a>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Navbar -->
+            <ul class="w3-navbar w3-theme-d2 w3-left-align w3-black w3-medium">
+                <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                    <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                </li>
+                <li style="width:14.75%"><a href="index.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+                <li class="w3-dropdown-hover w3-hide-small" style="width:20%"><a href="icetcce.html"><i class="w3-margin-right"></i>The Conference IC3E-2018</a></li>
+                <li class="w3-dropdown-hover w3-hide-small" style="width:14.75%"><a href="authors.html"><i class="w3-margin-center"></i>Guidelines for Authors</a></li>
+                <li class="w3-dropdown-hover w3-hide-small" style="width:14.75%"><a href="committees.html"><i class="w3-margin-center"></i>Committees</a></li>
+                <li class="w3-dropdown-hover w3-hide-small" style="width:15.75%"><a href="registration.html"><i class="w3-margin-right"></i>Registration</a></li>
+
+                <li class="w3-dropdown-hover w3-hide-small" style="width:20%">
+                    <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                    <div class="w3-dropdown-content w3-white w3-card-4">
+                        <a href="allahabad.html">The Allahabad</a>
+                        <a href="reachald.html">How to reach Allahabad</a>
+                        <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                        <a href="reachjk.html">How to reach J K Institute</a>
+                    </div>
+                </li>
+            </ul>
+
+
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-black w3-medium"> 
+                    <li class="w3-dropdown-hover"><a href="icetcce.html">The Conference IC3E-2018</a></li>
+                    <li class="w3-dropdown-hover"><a href="authors.html"><i class="w3-margin-center"></i>Guidelines for Authors</a></li>
+                    <li class="w3-dropdown-hover"><a href="committees.html">Committees</a></li>
+                    <li class="w3-dropdown-hover"><a href="registration.html">Registration</a></li>
+
+                    <li class="w3-dropdown-hover">
+                        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-purple w3-card-4">
+                            <a href="allahabad.html">The Allahabad</a>
+                            <a href="reachald.html">How to reach Allahabad</a>
+                            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                            <a href="reachjk.html">How to reach J K Institute</a>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>  
+
+
+
+
+            <div class="w3-row">
+
+                <div style="height:1px; background-color:#AAAAAA; clear:both; width:1130px; margin:0px auto; margin-bottom:20px;"></div>
+                <div class="w3-container w3-row">
+                    <div class="w3-half" style="padding-right:5px;">
+                        <h2 style="color:red">Latest News</h2>
+						<p>&nbsp;&nbsp;
+							<a href="/design/CFP.pdf" target="_blank"><button class="button" style="vertical-align:middle"><span>Call For Papers</span></button></a>
+						</p>
+                        <ul style="padding-left:3em;">
+                            <li><a class="ex2" href="registration.html" target="main">Registration</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><a class="ex2" href="dates.html" target="main">Important Dates</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><a class="ex2" href="submission.html" target="main">Conference Proceedings</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><a class="ex2" href="tutorial.html">Call For Tutorial</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><a class="ex2" href="special.html">Call For Special Session</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                            <li><a class="ex2" href="reviewer.html">Become a reviewer</a>&nbsp;&nbsp;<img src="design/img/gif.gif"></li>
+                        </ul>
+                        <div class="w3-panel w3-round-medium w3-blue w3-left-align " style="width:80%">
+                            <center><h4>Contact Details<br>
+                                    Prof. Nar Singh<br>
+                                    Dr. Ashish Khare<br>
+                                    Department of Electronics and Communication<br>
+                                    University of Allahabad, Allahabad, India<br>
+                                    Email – ic3e2018@gmail.com<br>
+                                    Contact- 9452401191, 9454626223</h4></center>
+
+
+                        </div>
+                    </div>
+                    <div class="w3-half">
+                        <div style="width:100%; height:75px;">
+                            <div style="float:left;"><img src="design/img/DATE.gif" /></div>
+                            <div class="blockfont" style="float:left; width:320px; height:75px; text-align:center; margin:0px auto; background:#eee;">
+                                <div style="padding-top:15px;">13th to 15th<br />April, 2018</div>
+                            </div>
+                        </div>
+                        <div style="height:13px"></div>
+                        <div style="width:100%; clear:both; height:90px;">
+                            <div style="float:left; height:90px; background:#219777;"><img src="design/img/VENUE.gif" style="padding-top:6px;" /></div>
+                            <div style="float:left; height:90px; width:320px; text-align:center; background:#eee;">
+                                <div class="blockfont" style="text-align:center; margin:0px auto; padding-top:15px;">J K Institute of Applied Physics and Technology</div>
+                                <div class="smallfont">University of Allahabad, Allahabad <br />
+                                </div> 
+                            </div>
+                        </div>
+                        <div style="height:13px"></div>
+                        <div style="width:100%; clear:both; height:85px;">
+                            <div style="float:left; height:115px; background:#b8462c;"><img src="design/img/TARGETDATE.gif" style="padding-top:20px;" /></div>
+                            <div style="float:left; height:115px; width:320px; text-align:center; margin:0px auto; background:#eee;">
+                                <div class="blockfont" style="padding-top:35px;">Last Date for Paper Submission is<br> 25th Feb, 2018</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <br>
+                <!--
+                    <footer class="w3-container w3-black">
+                        <div class="copyright" id="copyright">
+                            <h5 style="text-align: center">Copyright ©2018 J K Institute, University of Allahabad. All Rights Reserved.
+
+                                <div style="float:right">
+                                    <a href="#" class="back-to-top">
+                                        <img src="design/img/arrow.jpg" title="Back to top" style="text-align:left" width="25" height="25"></a>
+                                </div>
+                            </h5> 
+                        </div>
+                    </footer>
+                 -->    
+                <script>
+                // Used to toggle the menu on smaller screens when clicking on the menu button
+                    function openNav() {
+                        var x = document.getElementById("navDemo");
+                        if (x.className.indexOf("w3-show") == -1) {
+                            x.className += " w3-show";
+                        } else {
+                            x.className = x.className.replace(" w3-show", "");
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>
+
+    </body>
+</html>

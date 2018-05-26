@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="en">
+    <title>The Conference | JK Institute | University of Allahabad</title>
+    <link rel="icon" href="design/img/jklogo15.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="design/w3.css">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/icon.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        h1{
+            color:white;
+            font-family: serif;
+        }
+        h3{
+            color:purple;
+        }
+        h3{
+            font-family: serif;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to "page content" */
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+            from { bottom:-100px; opacity:0 }
+            to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom {
+            from{ bottom:-100px; opacity:0 }
+            to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+            display: none;
+        }
+        /*.w3-row{
+            max-width: 95%;
+            margin: 0 auto;
+        }*/
+
+        a.ex2:link{
+            text-decoration: none;
+        }
+
+        a.ex2:hover, a.ex2:active {
+            font-size: 120%;
+            color:blue;
+            text-decoration: underline;
+        }
+        .img-circle
+        {
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <body>
+        <div class="Container">
+            <header style="background-color:black">
+                <div class="w3-row">
+                    <div class="w3-col">
+                        <a href="index.html" style="text-decoration:none">
+                            <div id="logo" style="float: center;">
+                                <img src="design/img/logon.jpg" width="100%">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Navbar -->
+<ul class="w3-navbar w3-theme-d2 w3-left-align w3-black w3-medium">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    </li>
+    <li style="width:8.5%"><a href="index.html"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:16%"><a href="icetcce.html"><i class="w3-margin-right"></i>The Conference<br>IC3E-2018</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:18%"><a href="accepted.html"><i class="w3-margin-center"></i>List of Accepted Papers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="schedule.html"><i class="w3-margin-center"></i>Schedule</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:11%"><a href="speakers.html"><i class="w3-margin-center"></i>Invited<br>Speakers</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10%"><a href="committees.html"><i class="w3-margin-center"></i>Committees</a></li>
+    <li class="w3-dropdown-hover w3-hide-small w3-center" style="width:10.5%"><a href="registration.html"><i class="w3-margin-right"></i>Registration</a></li>
+
+    <li class="w3-dropdown-hover w3-hide-small" style="width:16%">
+        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+            <a href="allahabad.html">The Allahabad</a>
+            <a href="reachald.html">How to reach Allahabad</a>
+            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+            <a href="reachjk.html">How to reach J K Institute</a>
+        </div>
+    </li>
+            </ul>
+
+
+
+
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+                <ul class="w3-navbar w3-left-align w3-black w3-medium"> 
+                    <li class="w3-dropdown-hover"><a href="icetcce.html">The Conference IC3E-2018</a></li>
+                    <li class="w3-dropdown-hover"><a href="accepted.html">List of Accepted Papers</a></li>
+                    <li class="w3-dropdown-hover"><a href="schedule.html">Schedule</a></li>
+                    <li class="w3-dropdown-hover"><a href="speakers.html">Invited Speakers</a></li>
+                    <li class="w3-dropdown-hover"><a href="committees.html">Committees</a></li>
+                    <li class="w3-dropdown-hover"><a href="registration.html">Registration</a></li>
+
+                    <li class="w3-dropdown-hover">
+                        <a href="javascript:void(0);">Other Information <i class="fa fa-caret-down"></i></a>
+                        <div class="w3-dropdown-content w3-purple w3-card-4">
+                            <a href="allahabad.html">The Allahabad</a>
+                            <a href="reachald.html">How to reach Allahabad</a>
+                            <a href="jkiapt.html">J K Institute, University of Allahabad</a>
+                            <a href="reachjk.html">How to reach J K Institute</a>
+                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-container">
+                    <center>
+                        <h3 style="color:purple">Technical Program with session wise details</h3>
+                    </center>
+                </div>
+                <div style="height:1px; background-color:#AAAAAA; clear:both; width:70%; margin:0px auto; margin-bottom:5px;"></div>
+
+                <div class="w3-container">
+
+
+                    <div class="w3-pale-blue w3-leftbar w3-border-purple w3-margin-top" style="border: 1px solid black">
+                        <h3 style="font-family:serif; color: purple;padding-left: 10px;"><strong>Day 1 – Friday, 13<sup>th</sup> April, 2018</strong></h3>
+                    </div>
+                    <table class="w3-table-all w3-center">
+                        <tr>
+                            <td>08:30 - 09:30</td>
+                            <td>Registration</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>09:30 – 11:15</td>
+                            <td>Inauguration Ceremony and Keynote Address by <br>Prof. S. N. Joshi, Emeritus Scientist, CSIR-CEERI, Pilani<br>(Venue – S. N. Ghosh Auditorium)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:15 – 11:45</td>
+                            <td>High Tea</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:45 – 13:30</td>
+                            <td>Session 1 – Microwave and Antenna Technology<br>
+                                Session Chairs: Prof. S. N. Joshi and Prof. J. A. Ansari<br>
+                                Paper id : 10, 21, 119, 123, 161, 168<br>
+                                (Venue – S. N. Ghosh Auditorium)
+                            </td>
+                            <td>Session 2 – Image Processing and Optimization Techniques<br>
+                                Session Chairs: Prof. U. S. Tiwary and Dr. Ashish Khare<br>
+                                Paper id: 20, 100, 134, 143, 188<br>
+                                (Venue – IETE Conference Hall)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:30 – 14:30</td>
+                            <td>Lunch</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14:30 – 15:15</td>
+                            <td>Invited Talk 1 by Dr. Anuj Srivastava, MTNL, New Delhi<br>
+                                (Venue – S.N. Ghosh Auditorium)
+                            </td>
+                            <td>Invited Talk 2 by Dr. Sanjeev Karmakar, BIT, Durg<br>
+                                (Venue – IETE Conference Hall)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15:15 – 17:00</td>
+                            <td>Session 3 – Communication Systems and Signal Processing<br>
+                                Session Chairs: Prof. K. K. Bhutani, Prof. Nar Singh and Dr. Anuj Srivastava<br>
+                                Paper id : 25, 44, 98, 145, 155, 186<br>
+                                (Venue – S.N. Ghosh Auditorium)
+                            </td>
+                            <td>Session 4 – Machine Learning and Intelligent Applications<br>
+                                Session Chairs: Dr. Raghav Yadav, Dr. Sanjeev Karmakar, and Dr. N. P. Singh<br>
+                                Paper id: 7, 58, 101, 160, 181, 196<br>
+                                (Venue – IETE Conference Hall)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17:00 – 17:15</td>
+                            <td>Tea Break</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>17:15 – 18:30</td>
+                            <td>Showcase Session<br>
+                                Session Chairs: Dr. Hari Mohan Singh, Dr. Abhay Kumar Rai and Dr. A.K.S. Kushwaha<br>
+                                Paper id: 68, 81, 103, 131, 151, 202, 206<br>
+                                (Venue – S.N. Ghosh Auditorium)
+                            </td>
+                            <td>Invited talk 3 by Dr. N. P. Singh, MMM University of Technology, Gorakhpur<br>
+                                (Venue – IETE Conference Hall)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20:00 - 21:00</td>
+                            <td>Dinner</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <br>
+
+                    <div class="w3-container w3-pale-blue w3-leftbar w3-border-purple w3-margin-top" style="border: 1px solid black">
+                        <h3 style="font-family:serif; color: purple;"><strong>Day 2 – Saturday, 14<sup>th</sup> April, 2018</strong></h3>
+                    </div>
+                    <table class="w3-table-all w3-center">
+                      <tr>
+                        <td>08:30 – 09:00</td>
+                    
+                        <td>Breakfast</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>09:00 – 09:45</td>
+                    
+                        <td>Invited Talk 4 by Dr. Shirshu Verma, IIIT Allahabad<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td>Invited Talk 5 by Dr. A. K. Singh, IIT (BHU), Varanasi<br />
+                        (Venue – IETE Conference Hall)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>09:45 – 10:45</td>
+                    
+                        <td>Session 5 - Wireless Communication and Sensor Networks<br />
+                        Session Chairs: Dr. Shirshu Verma and Dr. Rajeev Singh and Dr. R. S. Yadav<br />
+                        Paper id: 16, 17, 54, 152, 198<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td>Session 6 - Natural Language Processing and Information Retrieval<br />
+                        Session Chairs: Dr. A. K. Singh and Dr. T. J. Siddiqui<br />
+                        Paper id: 11, 63, 74, 80, 87<br />
+                        (Venue – IETE Conference Hall)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>10:45 – 11:00</td>
+                    
+                        <td>Tea Break</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>11:00 – 11:45</td>
+                    
+                        <td>Invited talk 6 by Prof. S. M. K. Rahman, IIT Delhi<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td>Invited Talk 7 by Prof. Rajeev Srivastava, IIT (BHU), Varanasi<br />
+                        (Venue – IETE Conference Hall)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>11:45 – 13:30</td>
+                    
+                        <td>Session 7 - Embedded Systems and Digital Electronics<br />
+                        Session Chairs: Prof. S. M. K. Rahman, Prof. C. K. Dwivedi and Er. P. N. Gupta<br />
+                        Paper id: 46, 49, 57, 115, 159, 165<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td>Session 8 - Image Analysis and Computer Vision<br />
+                        Session Chairs: Prof. Rajeev Srivastava and Dr. Dushyant Kumar Singh<br />
+                        Paper id: 163, 171, 195, 200, 205<br />
+                        (Venue – IETE Conference Hall)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>13:30 - 14:30</td>
+                    
+                        <td>Lunch</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>14:30 – 15:15</td>
+                    
+                        <td>Invited Talk 8 by Prof. M. M. Gore, MNNIT, Allahabad<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td>Invited Talk 9 by Dr. Maheshkumar H. Kolekar, IIT Patna<br />
+                        (Venue – IETE Conference Hall)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>15:15 – 17:15</td>
+                    
+                        <td>Session 9 - Adhoc Network and IoT<br />
+                        Session Chairs: Prof. M. M. Gore, and Dr. R. K. Srivastava<br />
+                        Paper id: 8, 35, 41, 55, 128, 183<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td>Session 10 - Special Session on Frontiers in Multimedia Analytics<br />
+                        Session Chairs: Prof. Suneeta Agarwal and Dr. Rajitha B.<br />
+                        Paper id : 28, 86, 133, 137, 138, 148, 167<br />
+                        (Venue – IETE Conference Hall)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>17:15 – 17:30</td>
+                    
+                        <td>Tea Break</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>18:00 – 20:00</td>
+                    
+                        <td>Prize Distribution to students of the department and Cultural Events<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>20:00 – 22:00</td>
+                    
+                        <td>Conference Dinner</td>
+                    
+                        <td></td>
+                      </tr>
+                    </table>
+                    <br>
+                    <br>
+                    <div class="w3-container w3-pale-blue w3-leftbar w3-border-purple w3-margin-top" style="border: 1px solid black">
+                        <h3 style="font-family:serif; color: purple;"><strong>Day 3 – Saturday, 15<sup>th</sup> April, 2018</strong></h3>
+                    </div>
+                    <table class="w3-table-all w3-center">
+                      <tr>
+                        <td>08:00 – 08:30</td>
+                    
+                        <td>Breakfast</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>08:30 – 09:15</td>
+                    
+                        <td>Invited Talk 10 by Dr. Om Prakash, University of Allahabad, Allahabad<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td>Invited Talk 11 by Dr. Divakar Yadav, MMM University of Technology, Gorakhpur<br />
+                        (Venue – IETE Conference Hall)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>09:15 – 10:45</td>
+                    
+                        <td>Session 11 – Electronic Applications and Electronic Materials<br />
+                        Session Chairs: Prof. S. G. Prakash, Prof. N. K. Shukla and Er. Rajeev Srivastava<br />
+                        Paper id: 62, 150, 166, 184, 201<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td>Session 12 – Advanced Computing Theories and Applications<br />
+                        Session Chairs: Prof. R. R. Tewari, Dr. Divakar Yadav and Dr. Om Prakash<br />
+                        Paper id: 12, 24, 34, 116, 153<br />
+                        (Venue – IETE Conference Hall)</td>
+                      </tr>
+                    
+                      <tr>
+                        <td>10:45 – 11:00</td>
+                    
+                        <td>Tea Break</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>10:45 – 11:15</td>
+                    
+                        <td>Closing Ceremony and Conference Awards Distribution<br />
+                        (Venue – S.N. Ghosh Auditorium)</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>11:15 – 11:45</td>
+                    
+                        <td>High Tea</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>13:30 – 14:30</td>
+                    
+                        <td>Lunch</td>
+                    
+                        <td></td>
+                      </tr>
+                    
+                      <tr>
+                        <td>20:00 – 21:00</td>
+                    
+                        <td>Dinner</td>
+                    
+                        <td></td>
+                      </tr>
+                    </table>
+
+                </div>
+            </div>
+            <br>
+
+            <footer class="w3-container w3-black">
+                <div class="copyright" id="copyright">
+                    <h5 style="text-align: center">Copyright ©2018 J K Institute, University of Allahabad. All Rights Reserved.
+
+                        <div style="float:right">
+                            <a href="#" class="back-to-top">
+                                <img src="design/img/arrow.jpg" title="Back to top" style="text-align:left" width="25" height="25"></a>
+                        </div>
+                    </h5> 
+                </div>
+            </footer> 
+        </div>
+    </body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112794009-1"></script>
+    <script>
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag() {
+                                dataLayer.push(arguments);
+                            }
+                            gtag('js', new Date());
+
+                            gtag('config', 'UA-112794009-1');
+
+
+                            // Used to toggle the menu on smaller screens when clicking on the menu button
+                            function openNav() {
+                                var x = document.getElementById("navDemo");
+                                if (x.className.indexOf("w3-show") == -1) {
+                                    x.className += " w3-show";
+                                } else {
+                                    x.className = x.className.replace(" w3-show", "");
+                                }
+                            }
+    </script>
+</html>
