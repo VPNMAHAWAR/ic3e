@@ -1,0 +1,21 @@
+a.ex2:link{
+    text-decoration: none;
+}
+
+a.ex2:hover, a.ex2:active {
+font-size: 120%;
+color:blue;
+text-decoration: underline;
+}
+
+.Container
+{
+    width: 85%;
+    //min-width: 500px;
+    margin: auto;
+}
+body
+{
+    background-color: beige;
+}
+.w3-btn {margin-bottom:10px;}
